@@ -18,4 +18,4 @@ per-file-ignores =
     # 允许examples中的简化示例
     examples/*:D,F401
     # 允许__init__.py中的导入但未使用
-    __init__.py:F401,F403 
+    __init__.py:F401,F403

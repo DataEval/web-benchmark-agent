@@ -1,6 +1,7 @@
 """
 提取器测试模块
 """
+
 import os
 import unittest
 from unittest.mock import MagicMock, patch

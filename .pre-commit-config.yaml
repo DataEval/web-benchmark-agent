@@ -35,4 +35,4 @@ repos:
       - id: mypy
         additional_dependencies: [types-requests, pydantic]
         exclude: tests/
-        args: ["--ignore-missing-imports"] 
+        args: ["--ignore-missing-imports"]

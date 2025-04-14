@@ -24,23 +24,23 @@ graph TD
     CLI -->|单个URL| EM
     CLI -->|批量URL| EM
     API -->|请求| EM
-    
+
     EM -->|选择| FE
     EM -->|选择| JE
-    
+
     FE -->|原始内容| LLM
     JE -->|原始内容| LLM
-    
+
     LLM -->|处理| OP
-    
+
     OP -->|优化结果| MD
     OP -->|保存| HTML
     OP -->|保存| META
-    
+
     classDef primary fill:#f9f,stroke:#333,stroke-width:2px
     classDef secondary fill:#bbf,stroke:#333,stroke-width:1px
     classDef module fill:#dfd,stroke:#333,stroke-width:1px
-    
+
     class CLI,API primary
     class FE,JE,LLM,OP secondary
-    class EM,MD,HTML,META module 
+    class EM,MD,HTML,META module
