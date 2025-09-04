@@ -1,6 +1,7 @@
 """
 提取器基类模块
 """
+
 from abc import ABC, abstractmethod
 from typing import Dict, List, Optional, Union
 

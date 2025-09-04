@@ -1,6 +1,7 @@
 """
 Web Benchmark Agent主入口模块
 """
+
 import argparse
 import json
 import logging
@@ -223,7 +224,10 @@ def main():
     parser.add_argument("--url", help="要处理的URL")
     parser.add_argument("--urls-file", help="包含URL列表的文件路径")
     parser.add_argument(
-        "--extractor", choices=["firecrawl", "jina"], default="firecrawl", help="使用的提取器"
+        "--extractor",
+        choices=["firecrawl", "jina"],
+        default="firecrawl",
+        help="使用的提取器",
     )
     parser.add_argument("--no-optimize", action="store_true", help="禁用LLM优化")
     parser.add_argument("--output-file", help="单个URL的输出文件路径")
